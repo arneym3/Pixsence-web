@@ -43,7 +43,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
                 <Link className="text-gray-500 transition hover:text-blue-500" href="#0">LinkedIn</Link>
               </li>
               <li>
-                <Link className="text-gray-500 transition hover:text-blue-500" href="mailto:vitaly@pixsence.com">Contact Us</Link>
+                <Link className="text-gray-500 transition hover:text-blue-500" href="mailto:arneym3@gmail.com">Contact Us</Link>
               </li>
             </ul>
           </div>
@@ -55,7 +55,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
               <li>
                 <Link
                   className="flex items-center justify-center text-blue-500 transition hover:text-blue-400"
-                  href="https://linkedin.com/in/твоя-ссылка"
+                  href="https://linkedin.com/in/vitalya-batyan-5746551a3"
                   aria-label="LinkedIn"
                 >
                   <svg className="h-6 w-6 fill-current" viewBox="0 0 32 32">
