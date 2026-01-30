@@ -1,8 +1,8 @@
 import Hero from '@/components/hero'
 import Features from '@/components/features-planet'
-// 1. Импортируем партнеров
 import Partners from '@/components/partners'
-import Newsletter from '@/components/newsletter'
+// Проверь, чтобы newsletter лежал именно по этому пути:
+import Newsletter from '@/components/ui/newsletter' 
 
 export const metadata = {
   title: 'Pixsence | Modular On-Prem Risk Platform',
@@ -14,9 +14,8 @@ export default function Home() {
     <>
       <Hero />
       <Features />
-      {/* 2. Вставляем блок партнеров сюда, перед Newsletter */}
       <Partners />
       <Newsletter />
     </>
-  )
+  );
 }
