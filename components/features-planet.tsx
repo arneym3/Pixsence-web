@@ -1,8 +1,6 @@
 import Image from "next/image";
 import PlanetImg from "@/public/images/planet.png";
 import PlanetOverlayImg from "@/public/images/planet-overlay.svg";
-// Важно: теги 01-04 — это картинки-плашки. Текст на них в шаблонеCruip обычно нарисован, 
-// но мы поменяем подписи здесь, чтобы ты знал, что на что менять в графике.
 import PlanetTagImg01 from "@/public/images/planet-tag-01.png"; 
 import PlanetTagImg02 from "@/public/images/planet-tag-02.png";
 import PlanetTagImg03 from "@/public/images/planet-tag-03.png";
@@ -13,7 +11,6 @@ export default function FeaturesPlanet() {
     <section className="relative before:absolute before:inset-0 before:-z-20 before:bg-gray-900">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="py-12 md:py-20">
-          {/* Section header */}
           <div className="mx-auto max-w-3xl pb-16 text-center md:pb-20">
             <h2 className="text-3xl font-bold text-gray-200 md:text-4xl">
               Turn fragmented signals into operational truth
@@ -23,7 +20,6 @@ export default function FeaturesPlanet() {
             </p>
           </div>
 
-          {/* Planet */}
           <div className="pb-16 md:pb-20" data-aos="zoom-y-out">
             <div className="text-center">
               <div className="relative inline-flex rounded-full before:absolute before:inset-0 before:-z-10 before:scale-[.85] before:animate-[pulse_4s_cubic-bezier(.4,0,.6,1)_infinite] before:bg-linear-to-b before:from-blue-900 before:to-sky-700/50 before:blur-3xl after:absolute after:inset-0 after:rounded-[inherit] after:[background:radial-gradient(closest-side,var(--color-blue-500),transparent)]">
@@ -43,34 +39,33 @@ export default function FeaturesPlanet() {
                     alt="Network Decoration"
                   />
                   <div>
-                    {/* ТУТ ТВОИ СИГНАЛЫ (На картинках-тегах стоит заменить текст в Photoshop/Figma) */}
                     <Image
-                      className="absolute -left-28 top-16 z-10 animate-[float_4s_ease-in-out_infinite_both] opacity-80 transition-opacity duration-500"
-                      src={PlanetTagImg01} // Текст на картинке: "Power Quality"
+                      className="absolute -left-28 top-16 z-10 animate-[float_4s_ease-in-out_infinite_both] opacity-80"
+                      src={PlanetTagImg01}
                       width={253}
                       height={56}
-                      alt="Power Meters"
+                      alt="Power Quality"
                     />
                     <Image
-                      className="absolute left-56 top-7 z-10 animate-[float_4s_ease-in-out_infinite_1s_both] opacity-30 transition-opacity duration-500"
-                      src={PlanetTagImg02} // Текст на картинке: "Sensors/IoT"
+                      className="absolute left-56 top-7 z-10 animate-[float_4s_ease-in-out_infinite_1s_both] opacity-30"
+                      src={PlanetTagImg02}
                       width={241}
                       height={56}
-                      alt="Sensors"
+                      alt="Sensors/IoT"
                     />
                     <Image
-                      className="absolute -left-20 bottom-24 z-10 animate-[float_4s_ease-in-out_infinite_2s_both] opacity-25 transition-opacity duration-500"
-                      src={PlanetTagImg03} // Текст на картинке: "Access Logs"
+                      className="absolute -left-20 bottom-24 z-10 animate-[float_4s_ease-in-out_infinite_2s_both] opacity-25"
+                      src={PlanetTagImg03}
                       width={243}
                       height={56}
-                      alt="Access Control"
+                      alt="Access Logs"
                     />
                     <Image
-                      className="absolute bottom-32 left-64 z-10 animate-[float_4s_ease-in-out_infinite_3s_both] opacity-80 transition-opacity duration-500"
-                      src={PlanetTagImg04} // Текст на картинке: "Video Analytics"
+                      className="absolute bottom-32 left-64 z-10 animate-[float_4s_ease-in-out_infinite_3s_both] opacity-80"
+                      src={PlanetTagImg04}
                       width={251}
                       height={56}
-                      alt="CCTV Signals"
+                      alt="Video Analytics"
                     />
                   </div>
                 </div>
@@ -78,55 +73,30 @@ export default function FeaturesPlanet() {
             </div>
           </div>
 
-          {/* Grid */}
           <div className="grid overflow-hidden sm:grid-cols-2 lg:grid-cols-3 *:relative *:p-6 *:before:absolute *:before:bg-gray-800 *:before:[block-size:100vh] *:before:[inline-size:1px] *:before:[inset-block-start:0] *:before:[inset-inline-start:-1px] *:after:absolute *:after:bg-gray-800 *:after:[block-size:1px] *:after:[inline-size:100vw] *:after:[inset-block-start:-1px] *:after:[inset-inline-start:0] md:*:p-10">
             <article>
-              <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
-                <span>Operational Truth</span>
-              </h3>
-              <p className="text-[15px] text-gray-400">
-                Stop guessing. Get the real state of your assets across fragmented systems in one unified layer.
-              </p>
+              <h3 className="mb-2 font-medium text-gray-200">Operational Truth</h3>
+              <p className="text-[15px] text-gray-400">Stop guessing. Get the real state of your assets across fragmented systems in one unified layer.</p>
             </article>
             <article>
-              <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
-                <span>Deterministic Risk</span>
-              </h3>
-              <p className="text-[15px] text-gray-400">
-                Full lifecycle of every incident: from Warning to Alarm, with provable action playbooks and evidence.
-              </p>
+              <h3 className="mb-2 font-medium text-gray-200">Deterministic Risk</h3>
+              <p className="text-[15px] text-gray-400">Full lifecycle of every incident: from Warning to Alarm, with provable action playbooks.</p>
             </article>
             <article>
-              <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
-                <span>Tamper-Evident Audit</span>
-              </h3>
-              <p className="text-[15px] text-gray-400">
-                Every config change and operator action is recorded in an immutable log. Accountability by design.
-              </p>
+              <h3 className="mb-2 font-medium text-gray-200">Tamper-Evident Audit</h3>
+              <p className="text-[15px] text-gray-400">Every operator action is recorded in an immutable log. Accountability by design.</p>
             </article>
             <article>
-              <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
-                <span>Air-Gapped Ready</span>
-              </h3>
-              <p className="text-[15px] text-gray-400">
-                Deploy in fully isolated environments. No cloud required for core risk processing and security.
-              </p>
+              <h3 className="mb-2 font-medium text-gray-200">Air-Gapped Ready</h3>
+              <p className="text-[15px] text-gray-400">Deploy in fully isolated environments. No cloud required for core risk processing.</p>
             </article>
             <article>
-              <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
-                <span>Modular Core</span>
-              </h3>
-              <p className="text-[15px] text-gray-400">
-                Enable GroundGuard, PowerQuality or AirSense as needed. Pixsence grows with your facility.
-              </p>
+              <h3 className="mb-2 font-medium text-gray-200">Modular Core</h3>
+              <p className="text-[15px] text-gray-400">Enable GroundGuard, PowerQuality or AirSense as needed. Pixsence grows with you.</p>
             </article>
             <article>
-              <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
-                <span>AI Ops Copilot</span>
-              </h3>
-              <p className="text-[15px] text-gray-400">
-                Deterministic RCA drafts and ETA-aware forecasting to prevent downtime before it happens.
-              </p>
+              <h3 className="mb-2 font-medium text-gray-200">AI Ops Copilot</h3>
+              <p className="text-[15px] text-gray-400">Deterministic RCA drafts and ETA-aware forecasting to prevent downtime before it happens.</p>
             </article>
           </div>
         </div>
