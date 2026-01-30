@@ -80,16 +80,13 @@ export default function Footer({ border = false }: { border?: boolean }) {
       </div>
 
       {/* Big text "Pixsence" background */}
-      <div className="relative -mt-16 h-60 w-full select-none" aria-hidden="true">
-        <div className="pointer-events-none absolute left-1/2 -z-10 -translate-x-1/2 text-center text-[220px] font-bold leading-none before:bg-linear-to-b before:from-gray-700 before:to-gray-900 before:bg-clip-text before:text-transparent before:content-['Pixsence'] after:absolute after:inset-0 after:bg-gray-800/20 after:bg-clip-text after:text-transparent after:mix-blend-overlay after:content-['Pixsence'] md:text-[280px]"></div>
-        {/* Glow */}
-        <div
-          className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-2/3"
-          aria-hidden="true"
-        >
-          <div className="h-56 w-56 rounded-full border-[20px] border-blue-900/30 blur-[80px]"></div>
-        </div>
-      </div>
+<div className="relative mt-8 h-40 w-full select-none" aria-hidden="true">
+  <div className="pointer-events-none absolute left-1/2 -z-10 -translate-x-1/2 text-center text-[120px] font-bold leading-none before:bg-linear-to-b before:from-gray-700/40 before:to-gray-900/10 before:bg-clip-text before:text-transparent before:content-['PIXSENCE'] md:text-[200px]"></div>
+  {/* Glow */}
+  <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2" aria-hidden="true">
+    <div className="h-48 w-48 rounded-full border-[20px] border-blue-900/20 blur-[60px]"></div>
+  </div>
+</div>
     </footer>
   );
 }
