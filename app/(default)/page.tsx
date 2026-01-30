@@ -1,7 +1,7 @@
-import Hero from '../../components/hero'
-import Features from '../../components/features-planet'
-import Newsletter from '../../components/newsletter'
-import Zigzag from '../../components/zigzag'
+import Hero from '@/components/hero'
+import Features from '@/components/features-planet'
+import Newsletter from '@/components/newsletter'
+import Zigzag from '@/components/zigzag'
 
 export const metadata = {
   title: 'Pixsence - Modular on-prem Risk Platform',
